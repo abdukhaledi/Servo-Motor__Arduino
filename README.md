@@ -9,40 +9,51 @@ https://www.tinkercad.com/things/fIu9mjbMDmG-servo-motor/editel
 ## circuit figure:
 ![servo motor](https://user-images.githubusercontent.com/85647212/122301036-cf53dd80-cf08-11eb-8b56-befc35adb4ab.png)
 
-Arduino code:
-#include <Servo.h> //servo motor library
-
-// Crate "Servo" object to control the servo motor
+## Arduino code:
+import the servo library:
+``` C++
+#include <Servo.h> 
+```
+Create "Servo" object to control the servo motor
+``` C++
 Servo servoMotor0;
 Servo servoMotor1;
 Servo servoMotor2;  
 Servo servoMotor3; 
 Servo servoMotor4;  
-
-// Analog pin for the potentiometer 
+```
+Analog pin for the potentiometer 
+``` C++
 int potentiometer0 = A0;
 int potentiometer1 = A1;
 int potentiometer2 = A2;
 int potentiometer3 = A3;
 int potentiometer4 = A4;
-
-// variable to read values from potentiometers
+```
+variable to read values from potentiometers
+``` C++
 int pot_val0;
 int pot_val1;
 int pot_val2;
 int pot_val3;
 int pot_val4;
-  
+```
+inside setup function attache servo objects to its own pins
+``` C++
 void setup()
-{
-  // attaches servo objects to its own pins 
+{ 
   servoMotor0.attach(3);
   servoMotor1.attach(5);
   servoMotor2.attach(6);
   servoMotor3.attach(9);
   servoMotor4.attach(10);
 }
-
+```
+inside loop function:
+* read values of the potentiometers
+* scale values of the potentiometers
+* sets position according to its scaled value
+``` C++
 void loop()
 {
   // read values of the potentiometers
@@ -66,4 +77,5 @@ void loop()
   servoMotor3.write(pot_val3);
   servoMotor4.write(pot_val4);
 }
+```
 
