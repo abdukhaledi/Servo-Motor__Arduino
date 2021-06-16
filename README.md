@@ -1,6 +1,6 @@
 # servoMotorCircuit-robotArm
 This is a five servo motors circuit controlled by potentiometers, each potentiometer controls one servo motor using Arduino UNO microcontroler.
-Servo motor is on inital angle 0, and it can rotate for 90 digrees maximum.
+Servo motor is on inital angle 0, and it can rotated for 90 digrees maximum.
 The simulation is done using Tinkercad online software.
 
 ## circuit link: 
@@ -8,6 +8,10 @@ https://www.tinkercad.com/things/fIu9mjbMDmG-servo-motor/editel
 
 ## circuit figure:
 ![servo motor](https://user-images.githubusercontent.com/85647212/122301036-cf53dd80-cf08-11eb-8b56-befc35adb4ab.png)
+
+## circuit video:
+
+https://user-images.githubusercontent.com/85647212/122309547-2791dc00-cf17-11eb-8ce5-4f613c0aef7f.mp4
 
 ## Arduino code:
 import the servo library:
