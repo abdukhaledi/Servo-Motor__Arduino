@@ -1,5 +1,6 @@
 # Servo-Motor__Arduino
 ![Screenshot (421)](https://user-images.githubusercontent.com/85647212/122820312-22040f80-d2e4-11eb-8929-1a8e1395995d.png)
+
 Five servo motors for the robot arm project we're making on Smart Methods company, each servo motor controled by one potentiometer using Arduino UNO microcontroler.
 Servo motor is on inital angle 0, and it can be rotated for 90 digrees maximum.
 The simulation is done using Tinkercad online software.
